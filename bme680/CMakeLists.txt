@@ -32,4 +32,4 @@ set_target_properties(bme680lib PROPERTIES IMPORTED_LOCATION "${COMPONENT_DIR}/a
 add_library(mathlib STATIC IMPORTED GLOBAL)
 set_target_properties(mathlib PROPERTIES IMPORTED_LOCATION "${IDF_PATH}/components/newlib/lib/libm.a")
 
-target_link_libraries(${COMPONENT_LIB} PUBLIC bme680lib extra mathlib)
+target_link_libraries(${COMPONENT_LIB} PUBLIC bme680lib mathlib)
